@@ -1,0 +1,118 @@
+{
+  "workouts": [
+    {
+      "id": 1,
+      "exercise": "Yoga",
+      "duration": "Two hours",
+      "image":"https://images.unsplash.com/photo-1588286840104-8957b019727f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "couch": "Dr.Limo",
+      "weight": "55 kgs"
+    },
+   {
+      "id": 2,
+      "exercise": "Boxing",
+      "duration": "Two hours",
+      "image":"https://cdn.pixabay.com/photo/2022/02/22/12/52/muay-thai-7028717_960_720.jpg",
+      "couch": "Dr.Mike",
+      "weight": "80 kgs"
+    },
+    {
+        "id": 3,
+        "exercise": "Cardio",
+        "duration": "Two hours",
+        "image":"https://cdn.pixabay.com/photo/2022/09/13/07/41/endurance-7451199_960_720.jpg",
+        "couch": "Dr.Owen",
+        "weight": "70 kgs"
+      },
+      {
+        "id": 4,
+        "exercise": "Karate",
+        "duration": "Two hours",
+        "image":"https://cdn.pixabay.com/photo/2021/01/10/09/59/self-defense-5904580__340.jpg",
+        "couch": "Lucy",
+        "weight": "60 kgs"
+      },
+      {
+        "id": 5,
+        "exercise": "Weight Lifting",
+        "duration": "One hour",
+        "image":"https://cdn.pixabay.com/photo/2018/07/04/14/17/gym-3516208__340.jpg",
+        "couch": "Sam",
+        "weight": "70 kgs"
+      },
+      {
+        "id": 6,
+        "exercise": "Afrobics",
+        "duration": "Two hours",
+        "image":"https://cdn.pixabay.com/photo/2018/04/05/17/22/kettlebell-3293481__340.jpg",
+        "couch": "Jayden",
+        "weight": "80 kgs"
+      },
+      {
+        "id": 7,
+        "exercise": "Pulse push",
+        "duration": "One hour",
+        "image":"https://cdn.pixabay.com/photo/2017/04/26/09/44/sport-2262083__340.jpg",
+        "couch": "Nelson",
+        "weight": "60 kgs"
+      },
+      {
+        "id": 8,
+        "exercise": "Pilates",
+        "duration": "Two hours",
+        "image":"https://cdn.pixabay.com/photo/2017/01/20/11/44/yoga-1994667__340.jpg",
+        "couch": "Dr.Brooks",
+        "weight": "60 kgs"
+      },
+      {
+        "id": 9,
+        "exercise": "Jogging",
+        "duration": "Three hours",
+        "image":"https://cdn.pixabay.com/photo/2017/01/01/15/45/running-1944798__340.jpg",
+        "couch": "Jerusha",
+        "weight": "55 kgs"
+      },
+      {
+        "id": 10,
+        "exercise": "Toning",
+        "duration": "One hour",
+        "image":"https://cdn.pixabay.com/photo/2016/02/04/23/02/gym-room-1180062__340.jpg",
+        "couch": "Peter",
+        "weight": "60 kgs"
+      },
+      {
+        "id": 11,
+        "exercise": "Upper Body",
+        "duration": "Two hours",
+        "image":"https://cdn.pixabay.com/photo/2013/02/09/04/19/weights-79587__340.jpg",
+        "couch": "Sanderson",
+        "weight": "80 kgs"
+      },
+      {
+        "id": 12,
+        "exercise": "Lower Body",
+        "duration": "Two hours",
+        "image":"https://cdn.pixabay.com/photo/2015/07/02/10/26/training-828760__340.jpg",
+        "couch": "Eliana",
+        "weight": "80 kgs"
+      },
+      {
+        "id": 13,
+        "exercise": "Cable Machine",
+        "duration": "Two hours",
+        "image":"https://cdn.pixabay.com/photo/2015/07/02/10/27/training-828764__340.jpg",
+        "couch": "Obed",
+        "weight": "65 kgs"
+      },
+      {
+        "id": 14,
+        "exercise": "Taekwoondo",
+        "duration": "Three hours",
+        "image":"https://cdn.pixabay.com/photo/2022/01/05/02/54/woman-6916306__340.jpg",
+        "couch": "Liam",
+        "weight": "70 kgs"
+      }
+      
+      
+  ]
+}
