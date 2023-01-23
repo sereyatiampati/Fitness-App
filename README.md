@@ -1,5 +1,8 @@
-## GYM home page
-### Author-Abdu
+# PHASE II CAPSTONE PROJECT
+## FLEX GYM
 
-1. NavBar
-2. Info Page
+*Authors*
+| No  |      Name      |                  Email                   |     Role      |
+| :-: | :------------: | :--------------------------------------: | :-----------: |
+|  1  | Abdulrahman Omar  | abdu.omar@student.moringaschool.com |   Landing Page       |
+|  2  | Seraya Tiampati  |  @student.moringaschool.com  |  scrum Master   |
