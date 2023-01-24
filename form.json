@@ -1,0 +1,74 @@
+{
+    "messages": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john.doe@gmail.com",
+        "phone": "0789765432",
+        "message": "Hello, I'm interested in joining your gym."
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "email": "jane.smith@gmail.com",
+        "phone": "0723432129",
+        "message": "Can you please send me more information about your gym's classes?"
+      },
+      {
+        "id": 3,
+        "name": "Bob Johnson",
+        "email": "bob.johnson@gmail.com",
+        "phone": "0707078079",
+        "message": "I would like to schedule a tour of your gym."
+      },
+      {
+        "id": 4,
+        "name": "Emily Davis",
+        "email": "emily.davis@gmail.com",
+        "phone": "0789908765",
+        "message": "I'm interested in becoming a personal trainer at your gym."
+      },
+      {
+        "id": 5,
+        "name": "Michael Brown",
+        "email": "michael.brown@example.com",
+        "phone": "555-333-5559",
+        "message": "Do you have any deals or promotions currently available?"
+      },
+      {
+        "id": 6,
+        "name": "Sarah Miller",
+        "email": "sarah.miller@gmail.com",
+        "phone": "0776546504",
+        "message": "I have a question about your gym's membership options."
+      },
+      {
+        "id": 7,
+        "name": "David Wilson",
+        "email": "david.wilson@gmail.com",
+        "phone": "0789765412",
+        "message": "I would like to request a guest pass to try out your gym."
+      },
+      {
+        "id": 8,
+        "name": "Jessica Moore",
+        "email": "jessica.moore@test.com",
+        "phone": "0733233321",
+        "message": "Can you please provide more information about your gym's hours and location?"
+      },
+      {
+        "id": 9,
+        "name": "William Taylor",
+        "email": "william.taylor@gmail.com",
+        "phone": "0700987654",
+        "message": "I'm interested in signing up for a personal training package."
+      },
+      {
+        "id": 10,
+        "name": "Ashley Anderson",
+        "email": "ashley.anderson@gmail.com",
+        "phone": "0743675433",
+        "message": "Can you please tell me more about your gym's equipment and facilities?"
+      }
+    ]
+  }
