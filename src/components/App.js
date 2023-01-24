@@ -1,8 +1,9 @@
 import './App.css';
 import Home from "./home/Home";
-import OurServices from "./ourservices/OurServices";
-import Gallery from "./gallery/Gallery";
-import ContactUs from "./contactus/ContactUs";
+import '../dist/output.css';
+// import OurServices from "./ourservices/OurServices";
+// import Gallery from "./gallery/Gallery";
+// import ContactUs from "./contactus/ContactUs";
 
 function App() {
   return (
