@@ -11,7 +11,7 @@ function GalleryList({exercise, duration, image, coach, weight}){
   opacity-0 transition duration-500 hover:opacity-90">
         <p className="text-2xl">Exercise Name: {exercise}</p>
         <p className="text-2xl">Time duration:{duration}</p>
-        <p className="text-2xl">Min Wight: {weight}</p>
+        <p className="text-2xl">Min Weight: {weight}</p>
         <p className="text-2xl">Trainer: {coach}</p>
       </div>
       <img alt={`${image}`} src={image} />
