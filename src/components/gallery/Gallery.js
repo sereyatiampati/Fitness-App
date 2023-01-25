@@ -37,8 +37,8 @@ function Gallery() {
             <h1  className="basis-3/5 font-montserrat text-3xl font-bold">OUR CLASSES</h1>
             <p className="py-5">
               Browse our catalogue of the most popular and recommended exercise stacks that we offer
-              for an immersive experience. Provided are the recommenede minimum weight to participate 
-              and the required duration for each. The Individual coaches are also listed and you can book any at your will
+              for an immersive experience. Provided are the recommended minimum weight to participate 
+              and the required duration for each. The Individual coaches are also listed and you can book any on othem at your will
                to suit your needs.
             </p>
           </div>
