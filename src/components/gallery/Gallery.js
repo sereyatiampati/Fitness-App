@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from "react";
+
 import GalleryList from "../display/GalleryList";
+// import { motion } from "framer-motion";
 import { motion } from "framer-motion";
 // GET http method to fetch the diffrent workouts we have for our app.
 function Gallery() {
@@ -11,17 +13,20 @@ function Gallery() {
     .then((response) => response.json())
     .then((data)=>(setWorkouts(data)))
     }, []
-  )
+  )// GET http method to fet// GET http method to fetch the diffrent workouts we have for our app.ch the diffrent workouts we have for our app.
 // Using the map to iterate over each item in the workouts array
   const displayExercises = workouts.map((workout)=>{
     return(
         <GalleryList key={workout.id} exercise={workout.exercise} duration={workout.duration} image={workout.image} coach={workout.couch} weight={workout.weight}/>
-    )
+    ) //renders a "GalleryList" component and passes it the necessary props.
   })
-// using the  <motion.div> element, a custom component that is using the motion
-//library to animate our div bellow.
+  //the "motion" library from "framer-motion" which is used to animate the div element containing the gallery.
+//uses the "initial" prop to set the initial state of the section 
+//element to "hidden" and the "whileInView" prop to set the state of the element to "visible" 
+//when it is scrolled into view.
   return (
     <section id="gallery" className="w-full bg-red-100 py-20">
+      
       <motion.div>
         <motion.div
           className="mx-auto w-5/6"
@@ -43,7 +48,9 @@ function Gallery() {
                to suit your needs.
             </p>
           </div>
-        </motion.div>
+
+        </motion.div>{/* "div" element that contains an "ul" element which holds the "GalleryList" components for each workout.
+        has a className that defines the layout and styling for the gallery. */}
         <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
           <ul className="w-[2800px] whitespace-nowrap flex-wrap">
             { displayExercises }
