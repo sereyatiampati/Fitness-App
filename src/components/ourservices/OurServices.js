@@ -1,4 +1,6 @@
 import React from "react";
+import { Link, useHistory } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 import "./ourservices.css";
 const OurServices = () =>  {
     return(
@@ -28,7 +30,7 @@ const OurServices = () =>  {
                             <li>Group training</li>
                             <li>No time restriction</li>
                         </ul>
-                        <a href="ContactUs" class="primary-btn pricing-btn">Enroll now</a>
+                        <Link to="/contacts" href="ContactUs" class="primary-btn pricing-btn">Enroll now</Link>
                         <a href="ContactUs" class="thumb-icon"><i class="fa fa-picture-o"></i></a>
                     </div>
                 </div>
@@ -49,7 +51,7 @@ const OurServices = () =>  {
                             <li>Unlimited use of massage chairs</li>
                             <li>20% off supplements and cooler drinks</li>
                         </ul>
-                        <a href="ContactUs" class="primary-btn pricing-btn">Enroll now</a>
+                        <Link to="/contacts" href="ContactUs" class="primary-btn pricing-btn">Enroll now</Link>
                         <a href="ContactUs" class="thumb-icon"><i class="fa fa-picture-o"></i></a>
                     </div>
                 </div>
@@ -68,7 +70,7 @@ const OurServices = () =>  {
                             <li>personalized eating plan</li>
                             <li>MZ-1 heart rate monitor belt</li>             
                         </ul>
-                        <a href="ContactUs" class="primary-btn pricing-btn">Enroll now</a>
+                        <Link to="/contacts" href="ContactUs" class="primary-btn pricing-btn">Enroll now</Link>
                         <a href="ContactUs" class="thumb-icon"><i class="fa fa-picture-o"></i></a>
                     </div>
                 </div>
