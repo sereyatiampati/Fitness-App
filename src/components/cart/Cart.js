@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import { ShopContext } from "../../context/shop-context";
-import { PRODUCTS } from "../../context/products.js";
-import { CartItem } from "./cart-item.js";
+import { ShopContext } from "../../components/context/shop-context";
 import { Redirect } from "react-router-dom"
+import { PRODUCTS } from "../product/products";
+import { CartItem } from "./CartItem";
 import "./cart.css";
 
 export const Cart = () => {

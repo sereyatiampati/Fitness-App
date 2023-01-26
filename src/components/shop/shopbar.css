@@ -1,0 +1,25 @@
+.shopbar {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(19, 19, 19);
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.tagtext{
+  align-items: center;
+  color: white;
+}
+
+.links {
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  font-size: 25px;
+}
