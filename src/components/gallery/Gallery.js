@@ -1,24 +1,25 @@
 import React, {useState, useEffect} from "react";
 import GalleryList from "../display/GalleryList";
 import { motion } from "framer-motion";
-
+// GET http method to fetch the diffrent workouts we have for our app.
 function Gallery() {
   const[workouts, setWorkouts] = useState([]);
 
-  useEffect(
+  useEffect(  //Handle the fetch side effect
     ()=>{
     fetch("https://vercel-json-server-gules.vercel.app/workouts/")
     .then((response) => response.json())
     .then((data)=>(setWorkouts(data)))
     }, []
   )
-
+// Using the map to iterate over each item in the workouts array
   const displayExercises = workouts.map((workout)=>{
     return(
         <GalleryList key={workout.id} exercise={workout.exercise} duration={workout.duration} image={workout.image} coach={workout.couch} weight={workout.weight}/>
     )
   })
-
+// using the  <motion.div> element, a custom component that is using the motion
+//library to animate our div bellow.
   return (
     <section id="gallery" className="w-full bg-red-100 py-20">
       <motion.div>
