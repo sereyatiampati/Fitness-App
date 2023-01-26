@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { ShopContext } from "../../components/context/shop-context";
-import { Redirect } from "react-router-dom"
+import { Redirect, useParams } from "react-router-dom"
 import { PRODUCTS } from "../product/products";
 import { CartItem } from "./CartItem";
 import "./cart.css";
@@ -8,6 +8,8 @@ import "./cart.css";
 export const Cart = () => {
   const { cartItems, getTotalCartAmount, checkout } = useContext(ShopContext);
   const totalAmount = getTotalCartAmount();
+  const params = useParams()
+  console.log(params)
 
   // const navigate = useNavigate();
 
@@ -27,7 +29,7 @@ export const Cart = () => {
       {totalAmount > 0 ? (
         <div className="checkout">
           <p> Subtotal: ${totalAmount} </p>
-          <button onClick={() => { checkout(); <Redirect to="/checkout"/>}}> Continue Shopping </button>
+          <button onClick={() => {<Redirect to="/shop"/>}}> Continue Shopping </button>
           <button
             onClick={() => {
               checkout();

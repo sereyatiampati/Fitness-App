@@ -8,8 +8,8 @@ export const ShopBar = () => {
     <div className="shopbar">
       <div className="tagtext">Welcome To Flexy Shop</div>
       <div className="links">
-        <Link to="/"> Our Shop </Link>
-        <Link to="/cart">
+        <Link to="/shop"> Our Shop </Link>
+        <Link to="/shop/cart">
           <ShoppingCart size={32} />
         </Link>
       </div>
