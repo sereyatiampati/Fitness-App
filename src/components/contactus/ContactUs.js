@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "./contactus.css"
 
 function ContactUs() {
 // update the state of the the form
