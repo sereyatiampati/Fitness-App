@@ -34,7 +34,7 @@ function Landing(){
               </div>
             </div>
 
-            <p className="mt-8 text-sm">
+            <p className="mt-8 text-base">
               Welcome to FlexyGym! We pride in ensuring that you have the flex to better your mantle.
               With world class equipment and experienced trainers, your will experience physical, mental and intellectual growth unmatched.
             </p>
