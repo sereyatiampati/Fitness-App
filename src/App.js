@@ -1,18 +1,20 @@
 import './App.css';
-import NavBar from "./NavBar"
-import Home from "./Home"
+//import NavBar from "./NavBar"
+//import Home from "./Home"
 import OurServices from "./OurServices"
-import Gallery from "./Gallery"
-import ContactUs from "./ContactUs"
+//import Gallery from "./Gallery"
+//import ContactUs from "./ContactUs"
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <Home />
       <OurServices />
+      
+      {/*<NavBar />
+      <Home />
+      
       <Gallery />
-      <ContactUs />
+     <ContactUs /> */}
     </div>
   );
 }
