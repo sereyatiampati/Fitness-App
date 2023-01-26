@@ -1,121 +1,99 @@
-import React, { useState,useEffect } from "react";
+import React, { useState } from "react";
+
 
 function ContactUs() {
-  const ContactForm = () => {
-    // http request with method "GET"
-    const [messages, setMessages] = useState([]);
+// update the state of the the form
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    tel: "",
+    message: "",
+  });
+
+  
+  function handleChange(e){
+    setFormData({
+      ...formData,
+      [e.target.name]:e.target.value
+    })
+
+}
+
+function handleSubmit(){
     
-    useEffect(() => {
-      fetch("http://localhost:3001/messages")
-        .then((response) => response.json())
-        .then((data) => setMessages(data));
-    }, []);
-
-    const ContactForm = () => {
-      // update the state of the the form
-      const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        phone: "",
-        message: "",
-      });
-      // this stores the validation errors for the form inputs
-      const [errors, setErrors] = useState({});
-      //   create a new object and then set the value of the input that was changed.
-      const handleChange = (event) => {
-        const { name, value } = event.target;
-        setFormData({ ...formData, [name]: value });
-      };
-
-      const handleSubmit = (event) => {
-        event.preventDefault();
-        const newErrors = validateForm(formData);
-        setErrors(newErrors);
-        if (Object.keys(newErrors).length === 0) {
-          // send the form data to the server after checking that the data is valid with http request method "POST"
-          fetch("http://localhost:3001/messages", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(formData),
-          })
-            .then((response) => response.json())
-            .then((data) => {
-              console.log("Success:", data);
-            })
-            .catch((error) => {
-              console.error("Error:", error);
-            });
-        }
-      };
-    };
-  };
-  //   form validation then submission
-  const validateForm = (data) => {
-    const errors = {};
-    if (!data.name) {
-      errors.name = "Name is required";
-    }
-    if (!data.email) {
-      errors.email = "Email is required";
-      // below checks if the email input matches the format of email address
-    } else if (!/\S+@\S+\.\S+/.test(data.email)) {
-      errors.email = "Email is not valid";
-    }
-    if (!data.message) {
-      errors.message = "Message is required";
-    }
-    return errors;
-  };
-  //   form data & submitting
-  let handleSubmit;
-  let formData;
-  let handleChange;
-  let errors
+    fetch("http://localhost:3000/messages",{
+        method:"POST",
+        headers:{
+            "content-Type":"application/json",
+        },
+        body:JSON.stringify(formData)
+    })
+    .then((resp)=>(resp.json)())
+    .then((formData)=>setFormData(formData))
+    alert('Transaction Added successfully')
+   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="name">Name:</label>
-      <input
-        type="text"
-        id="name"
-        name="name"
-        value={formData.name}
-        onChange={handleChange}
-      />
-      {errors.name && <p className="error">{errors.name}</p>}
+		<>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 
-      <label htmlFor="email">Email:</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        value={formData.email}
-        onChange={handleChange}
-      />
-      {errors.email && <p className="error">{errors.email}</p>}
-
-      <label htmlFor="phone">Phone:</label>
-      <input
-        type="tel"
-        id="phone"
-        name="phone"
-        value={formData.phone}
-        onChange={handleChange}
-      />
-
-      <label htmlFor="message">Message:</label>
-      <textarea
-        id="message"
-        name="message"
-        value={formData.message}
-        onChange={handleChange}
-      />
-      {errors.message && <p className="error">{errors.message}</p>}
-
-      <button type="submit">Submit</button>
-    </form>
+<div id="contact" class="contact-area section-padding">
+	<div class="container">										
+		<div class="section-title text-center">
+			<h1>Get in Touch</h1>
+			<p>Want to stay fit and you can't find the motivation? Join in on one of our fitness classes with our certified trainer! Enjoy a discount of <strong>10% off</strong> when you book in this month.</p>
+		</div>					
+		<div class="row">
+			<div class="col-lg-7">	
+				<div class="contact">
+					<form onSubmit={handleSubmit} class="form" name="enq" method="post" onsubmit="return  validation();">
+						<div class="row">
+							<div class="form-group col-md-6">
+								<input type="text" name="name" class="form-control" placeholder="Name" required="required" value={formData.name} onChange={handleChange}/>
+							</div>
+							<div class="form-group col-md-6">
+								<input type="email" name="email" class="form-control" placeholder="Email" required="required" value={formData.email} onChange={handleChange}/>
+							</div>
+							<div class="form-group col-md-12">
+								<input type="number" name="tel" class="form-control" placeholder="Phone Number" required="required" value={formData.phone} onChange={handleChange}/>
+							</div>
+							<div class="form-group col-md-12">
+								<textarea rows="6" name="message" class="form-control" placeholder="Your Message" required="required" value={formData.message} onChange={handleChange}></textarea>
+							</div>
+							<div class="col-md-12 text-center">
+								<button type="submit" value="Send message" name="submit" id="submitButton" class="btn btn-contact-bg" title="Submit Your Message!">Send us a Message</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="col-lg-5">
+				<div class="single_address">
+					<i class="fa fa-map-marker"></i>
+					<h4>Our Address</h4>
+					<p>Buffalo mall</p>
+				</div>
+				<div class="single_address">
+					<i class="fa fa-envelope"></i>
+					<h4>Send your message</h4>
+					<p>flexygym@gmail.com</p>
+				</div>
+				<div class="single_address">
+					<i class="fa fa-phone"></i>
+					<h4>Call us on</h4>
+					<p>(+254) 723 397 100</p>
+				</div>
+				<div class="single_address">
+					<i class="fa fa-clock-o"></i>
+					<h4>Work Time</h4>
+					<p>Mon - Fri: 08.00 - 16.00. <br/>Sat: 10.00 - 14.00</p>
+				</div>					
+			</div>
+		</div>
+	</div>	
+</div>
+        </>
+    
   );
 }
 
