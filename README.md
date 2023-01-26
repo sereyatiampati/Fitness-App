@@ -1,7 +1,7 @@
 # PHASE II CAPSTONE PROJECT
 ## FLEX GYM
 
-
+### Landing Page
 ---
 **Authors**
 | No  |      Name      |                  Email                   |     Role      |
