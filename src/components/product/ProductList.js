@@ -1,7 +1,7 @@
 import React from "react";
-import { PRODUCTS } from "../../products";
-import { Product } from "./product";
-import "./shop.css";
+import { PRODUCTS } from "../product/products";
+import { Product } from "./ProductItem";
+import "../shop/shop.css";
 
 export const Shop = () => {
   return (

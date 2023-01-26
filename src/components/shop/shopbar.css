@@ -1,10 +1,14 @@
-.navbar {
+.shopbar {
   width: 100%;
   height: 80px;
   background-color: rgb(19, 19, 19);
-  display: flex;
-  justify-content: flex-end;
   align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.tagtext{
+  align-items: center;
+  color: white;
 }
 
 .links {
