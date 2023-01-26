@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { ShopContext } from "../../context/shop-context";
-import { PRODUCTS } from "../../products";
-import { CartItem } from "./cart-item";
+import { PRODUCTS } from "../../context/products.js";
+import { CartItem } from "./cart-item.js";
 import { useNavigate } from "react-router-dom";
 
 import "./cart.css";

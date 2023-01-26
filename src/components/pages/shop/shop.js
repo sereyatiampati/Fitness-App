@@ -1,5 +1,5 @@
 import React from "react";
-import { PRODUCTS } from "../../products";
+import { PRODUCTS } from "../../context/products.js";
 import { Product } from "./product";
 import "./shop.css";
 
