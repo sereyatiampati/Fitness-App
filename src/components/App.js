@@ -1,5 +1,5 @@
 import './App.css';
-// import Home from "./home/Home";
+import Home from "./home/Home";
 import '../dist/output.css';
 // import OurServices from "./ourservices/OurServices";
 import Gallery from "./gallery/Gallery";
@@ -8,7 +8,7 @@ import Gallery from "./gallery/Gallery";
 function App() {
   return (
     <div className="App">
-      {/* <Home /> */}
+      <Home />
       <Gallery />
 
       {/* <OurServices />
