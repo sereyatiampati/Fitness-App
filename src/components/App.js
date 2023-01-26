@@ -6,7 +6,7 @@ import { Cart } from "./pages/cart/cart.js";
 import { ShopContextProvider } from "./context/shop-context.js";
 import Home from "./home/Home";
 import '../dist/output.css';
-// import OurServices from "./ourservices/OurServices";
+import OurServices from "./ourservices/OurServices";
 import Gallery from "./gallery/Gallery";
 import ContactUs from "./contactus/ContactUs";
 
@@ -24,6 +24,7 @@ function App() {
             <Route path="/cart" element={<Cart />} />
           </Routes>
         </Router>
+        <OurServices/>
         <ContactUs/>
       </ShopContextProvider>
     </div>
