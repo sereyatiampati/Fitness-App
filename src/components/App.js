@@ -8,7 +8,7 @@ import Home from "./home/Home";
 import '../dist/output.css';
 // import OurServices from "./ourservices/OurServices";
 import Gallery from "./gallery/Gallery";
-// import ContactUs from "./contactus/ContactUs";
+import ContactUs from "./contactus/ContactUs";
 
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
             <Route path="/cart" element={<Cart />} />
           </Routes>
         </Router>
+        <ContactUs/>
       </ShopContextProvider>
     </div>
   );
