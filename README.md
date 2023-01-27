@@ -3,6 +3,7 @@
 <h2> About The Project</h2>
 <p>This is a React Application that offers users the convenience in booking and subscribing to a fitness program easily online. It also allows users to shop quality sportswear and equipments. It also aims to build a community and drive engagement to give knowledge to people among other features.
 </p>
+<p>[Fitness App Live Link](https://fitness-app-livid.vercel.app)</p>
 
 <h2>Demo</h2>
 <p><img src="" alt="Flexy Gym"></p>
