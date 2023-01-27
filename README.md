@@ -6,7 +6,7 @@
 <p>[Fitness App Live Link](https://fitness-app-livid.vercel.app)</p>
 
 <h2>Demo</h2>
-<p><img src="" alt="Flexy Gym"></p>
+<p><img src="public/demo.png" alt="Flexy Gym"></p>
 
 ---
 **Authors and Contributors**
