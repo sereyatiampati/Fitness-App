@@ -12,8 +12,8 @@
 **Authors and Contributors**
 | No  |      Name      |                  Email                   |     Role      |
 | :-: | :------------: | :--------------------------------------: | :-----------: |
-|  1  | Abdulrahman Omar  | abdu.omar@student.moringaschool.com |   Landing Page       |
-|  2  | Emilly Tiampati  | emilly.tiampati@student.moringaschool.com |   Shop and Cart       |
+|  1 | Emilly Tiampati  | emilly.tiampati@student.moringaschool.com |   Shop and Cart       |
+|  2  | Abdulrahman Omar  | abdu.omar@student.moringaschool.com |   Landing Page       |
 |  3  | Samuel Muthaiga  |samuel.muthaiga@student.moringaschool.com |   Gallery Page      |
 |  4  | Justine Limo  | justine.limo@student.moringaschool.com |   Contact Us Page       |
 |  5  | Maryann Njuguna  | maryann.njuguna@student.moringaschool.com |   Services Page       |
